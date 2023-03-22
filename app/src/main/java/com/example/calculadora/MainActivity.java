@@ -55,10 +55,68 @@ public class MainActivity extends AppCompatActivity {
         telaResultado.setText(null);
     }
 
+    public void somar(View v){
+        numeroArrumado++;
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addZero(View v){
+        valores.add(0);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
     public void addUm(View v){
         valores.add(1);
         arrumarArrayList();
         telaResultado.setText(numeroArrumado+"");
+    }
 
+    public void addDois(View v){
+        valores.add(2);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addTres(View v){
+        valores.add(3);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addQuatro(View v){
+        valores.add(4);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addCinco(View v){
+        valores.add(5);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addSeis(View v){
+        valores.add(6);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addSete(View v){
+        valores.add(7);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addOito(View v){
+        valores.add(8);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
+    }
+
+    public void addNove(View v){
+        valores.add(9);
+        arrumarArrayList();
+        telaResultado.setText(numeroArrumado+"");
     }
 }

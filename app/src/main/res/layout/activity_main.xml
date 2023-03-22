@@ -15,6 +15,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="40dp"
         android:backgroundTint="#03A9F4"
+        android:onClick="somar"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +28,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addQuatro"
         android:text="4"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn5"
         app:layout_constraintEnd_toStartOf="@+id/btn5" />
@@ -37,6 +39,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addZero"
         android:text="0"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnIgual"
         app:layout_constraintEnd_toStartOf="@+id/btnIgual" />
@@ -57,6 +60,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addNove"
         android:text="9"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnLimpa"
         app:layout_constraintEnd_toStartOf="@+id/btnLimpa" />
@@ -67,6 +71,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addSete"
         android:text="7"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn8"
         app:layout_constraintEnd_toStartOf="@+id/btn8" />
@@ -77,6 +82,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addOito"
         android:text="8"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn9"
         app:layout_constraintEnd_toStartOf="@+id/btn9" />
@@ -87,6 +93,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addCinco"
         android:text="5"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn6"
         app:layout_constraintEnd_toStartOf="@+id/btn6" />
@@ -108,6 +115,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addSeis"
         android:text="6"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnMais"
         app:layout_constraintEnd_toStartOf="@+id/btnMais" />
@@ -142,6 +150,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addTres"
         android:text="3"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnMenos"
         app:layout_constraintEnd_toStartOf="@+id/btnMenos" />
@@ -152,6 +161,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#B0B0B0"
+        android:onClick="addDois"
         android:text="2"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn3"
         app:layout_constraintEnd_toStartOf="@+id/btn3" />
