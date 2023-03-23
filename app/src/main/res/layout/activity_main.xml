@@ -13,12 +13,13 @@
         android:id="@+id/btnMais"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="36dp"
         android:backgroundTint="#03A9F4"
         android:onClick="somar"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLimpa"
         app:layout_constraintVertical_bias="0.060000002" />
 
@@ -124,11 +125,13 @@
         android:id="@+id/btnDivide"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="36dp"
         android:backgroundTint="#03A9F4"
+        android:onClick="dividir"
         android:text="÷"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMenos"
         app:layout_constraintVertical_bias="0.060000002" />
 
@@ -136,12 +139,13 @@
         android:id="@+id/btnMenos"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="36dp"
         android:backgroundTint="#03A9F4"
         android:onClick="subtrair"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMais"
         app:layout_constraintVertical_bias="0.060000002" />
 
@@ -171,12 +175,13 @@
         android:id="@+id/btnLimpa"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="36dp"
         android:backgroundTint="#0061AE"
         android:onClick="limpar"
         android:text="C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telaResultado"
         app:layout_constraintVertical_bias="0.339" />
 
@@ -186,6 +191,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#03A9F4"
+        android:onClick="multiplicar"
         android:text="X"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnDivide"
         app:layout_constraintEnd_toStartOf="@+id/btnDivide" />

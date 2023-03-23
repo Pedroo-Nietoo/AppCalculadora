@@ -42,12 +42,20 @@ public class MainActivity extends AppCompatActivity {
         telaResultado = findViewById(R.id.telaResultado);
     }
 
-    public void arrumarArrayList() {
+    public void arrumarNumeros() {
         String x = "";
         for (Integer num : valores) {
             x += num.toString();
         }
         numeroArrumado = Integer.parseInt(x);
+    }
+
+    public boolean verificarNumeros() {
+        if(valores.isEmpty()){
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public void limpar(View v) {
@@ -56,78 +64,94 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void somar(View v) {
-        telaResultado.setText(numeroArrumado + "+");
+        if(verificarNumeros()){
+            telaResultado.setText(numeroArrumado + "+");
+        } else {
+            telaResultado.setText(null);
+        }
     }
 
     public void subtrair(View v) {
-        telaResultado.setText(numeroArrumado + "-");
+        if(verificarNumeros()){
+            telaResultado.setText(numeroArrumado + "-");
+        } else {
+            telaResultado.setText(null);
+        }
     }
 
     public void multiplicar(View v) {
-        telaResultado.setText(numeroArrumado + "X");
+        if(verificarNumeros()){
+            telaResultado.setText(numeroArrumado + "X");
+        } else {
+            telaResultado.setText(null);
+        }
     }
 
     public void dividir(View v) {
-        telaResultado.setText(numeroArrumado + "/");
+        if(verificarNumeros()){
+            telaResultado.setText(numeroArrumado + "/");
+        } else {
+            telaResultado.setText(null);
+        }
     }
 
     public void addZero(View v) {
         valores.add(0);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addUm(View v) {
         valores.add(1);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addDois(View v) {
         valores.add(2);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addTres(View v) {
         valores.add(3);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addQuatro(View v) {
         valores.add(4);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addCinco(View v) {
         valores.add(5);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addSeis(View v) {
         valores.add(6);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addSete(View v) {
         valores.add(7);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addOito(View v) {
         valores.add(8);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 
     public void addNove(View v) {
         valores.add(9);
-        arrumarArrayList();
+        arrumarNumeros();
         telaResultado.setText(numeroArrumado + "");
     }
 }
